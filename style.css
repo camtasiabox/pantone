@@ -1,0 +1,695 @@
+@charset "UTF-8";
+/* CSS Document */
+
+BODY
+ {
+    FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, Sans-Serif;
+    FONT-SIZE: 10pt;
+    TEXT-ALIGN: justify;
+    background: url(grid.png) #cccccc;
+	background: -webkit-image-set(url(grid.png) 1x, url(grid2x.png) 2x);
+    background-attachment: fixed;
+    margin-top: 1em;
+    margin-right: 2em;
+    margin-left: 2em;  
+	-webkit-text-size-adjust: 100%; 
+  }
+
+A:link { color: #006000; text-decoration: none }
+A:visited { color: #006000; text-decoration: none }
+A:active { color: #008500; text-decoration: none }
+A:hover { color: #008500; text-decoration: underline; font-style: italic }
+A IMG { border: 0px }
+A:hover IMG { filter: none; border: 0px }
+
+.parent {
+  display: flex;
+  justify-content: center; /* Центрирует по горизонтали */
+  align-items: center;     /* Центрирует по вертикали */
+  min-height: 100vh;       /* Чтобы увидеть центр экрана, задаем высоту родителю */
+}
+
+/* a img:hover { filter:alpha(opacity=70); ..-opacity:0.7; opacity:0.7; -khtml-opacity:0.7 } */
+
+.novinka {color:#df0e07; FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, Sans-Serif; font-size:16pt; margin-top: -50px; margin-right: -180px; margin-left: 10px;}
+.novinka_ellips {margin-top: -70px; margin-right: 0px}
+
+/* New container  */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #CCCCCC;
+}
+
+/* Резиновый контейнер по центру */
+.container {
+    max-width: 726px;
+    width: 100%;
+    margin: 140px auto 30px auto;
+    background: #EAEAEA;
+	
+	/* Добавляем скругление */
+    border-radius: 10px;	
+
+    /* Убираем внутренний скролл */
+    overflow: visible;
+}
+
+/* Центрирование таблицы */
+.container table {
+    margin: 0 auto;
+}
+
+.main-title {
+     margin-top: 0em;
+    font-weight: bold;
+    font-size: 11pt;
+    TEXT-ALIGN: left;
+    margin-bottom: 15pt;
+	margin-left: 58pt;
+}
+.main-footer {
+	margin-right: 22pt;
+}
+
+/* End container  */
+
+textarea
+{
+background-image:url(lineyka.gif);
+FONT-FAMILY: Verdana, Arial, Helvetica, Geneva, Sans-Serif;
+FONT-SIZE: 12pt;
+font-weight: bold;
+color: #36007e;
+resize: both;
+}
+
+
+.clients {margin-top:10px; margin-bottom:0px;}
+.clientsp {TEXT-INDENT: 0em;}
+
+.colordiff
+{
+	FONT-SIZE: 7pt;
+}
+
+.dgcalc
+{
+	FONT-SIZE: 8pt;
+}
+
+select
+{
+	font-size: 9pt;
+	color: #36007e;
+}
+
+img    
+  { 
+    cursor: hand;
+  }
+
+H1
+  {
+    margin-top: -0.6em;
+    font-weight: bold;
+    font-size: 16pt; 
+    TEXT-ALIGN: center;
+  }
+H1 a
+{color: #004400 !important;}
+
+H2
+  {
+    font-weight: bold;
+    font-size: 13pt;
+    TEXT-ALIGN: left;
+  }
+H2 a
+{color: #004400 !important;}
+
+H3
+  {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 11pt; 
+    TEXT-ALIGN: left;
+  }
+H3 a
+{color: #004400 !important;}
+
+H4
+  {
+    margin-top: 0em;
+    font-weight: bold;
+    font-size: 11pt;
+    TEXT-ALIGN: left;
+    margin-bottom: 15pt;
+  }
+H4 a
+{color: #004400 !important;}
+
+H5
+  {
+    font-weight: bold;
+    font-style: italic;
+  }
+H5 a
+{color: #004400 !important;}
+
+H6
+  {
+    margin-top: 0em;
+    font-weight: bold;
+    font-size: 8pt;
+    TEXT-ALIGN: left;
+    margin-bottom: 15pt;
+  }
+H6 a
+{color: #004400 !important;}
+  
+H7
+  {
+	font-size: 8pt;
+    font-weight: bold;
+  }
+H7 a
+{color: #004400 !important;}
+
+P
+ {
+    TEXT-INDENT: 2em;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+ }
+
+TABLE
+ {
+    margin-bottom: 8pt;
+    margin-left: 0em;
+    margin-right: 0em;
+    TEXT-ALIGN: left;
+    TEXT-INDENT: 0em; 
+ }
+
+TD, TD P
+ { 
+    FONT-SIZE: 9pt;
+    margin-top: 0pt;
+    margin-left: 4pt;
+    margin-right: 4pt;
+ }
+
+TH, TH P
+ {
+    font-weight: bold;
+    FONT-SIZE: 9pt;
+    margin-top: 0pt;
+    margin-left: 4pt;
+    margin-right: 4pt;
+ }
+
+/* CMYK */
+
+.cyan
+ {
+    FONT-WEIGHT: bold;
+    color: #00A9E3
+ }
+
+.magenta
+ {
+    FONT-WEIGHT: bold;
+    color: #D32885
+ }
+
+.yellow
+ {
+    FONT-WEIGHT: bold;
+    color: #D0BB00
+ }
+
+.black
+ {
+    FONT-WEIGHT: bold;
+    color: #222222
+ }
+
+.red
+ {
+    FONT-WEIGHT: bold;
+    color: #df0e07
+ }
+
+.green
+ {
+    FONT-WEIGHT: bold;
+    color: #008D37
+ }
+
+.blue
+ {
+    FONT-WEIGHT: bold;
+    color: #263784
+ }
+
+
+/* подзаголовок */
+
+.sub 
+ {
+    font-size: 8pt;
+ }
+ 
+ .sub7
+ {
+    font-size: 7pt;
+ }
+
+
+/* автор */
+
+.author
+ { 
+    FONT-WEIGHT: bold;
+    FONT-STYLE: italic;
+    TEXT-INDENT: 0em;
+    TEXT-ALIGN: center;
+    letter-spacing: 0.1em;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+ }
+
+
+/*  эпиграф  */
+
+.epigraf
+ {
+    TEXT-ALIGN: right;
+    TEXT-INDENT: 0em; 
+    margin-bottom: 10pt;
+ }
+
+
+/* "предисловие" */
+
+.extension
+ { 
+    FONT-STYLE: italic;
+    TEXT-INDENT: 0em;
+    TEXT-ALIGN: left;  
+    margin-bottom: 10pt;
+ }
+
+
+/* оглавление */
+
+.contents
+ {
+    COLOR: gray; 
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: bold;
+ }
+
+.contents:hover
+ {
+  text-decoration : underline;
+ }
+
+
+/* внешние ссылки */
+
+.extra
+ {
+    TEXT-DECORATION: none;
+    FONT-WEIGHT: bold;
+ }
+
+.extra:hover
+ {
+  text-decoration : underline;
+ }
+
+
+/* буллет */
+
+.bullet
+ {
+    TEXT-INDENT: 0em;
+    margin-left: 2em;
+ }
+
+
+/* сноски */
+
+.sup
+ {
+    FONT-SIZE: 8pt;
+    VERTICAL-ALIGN: super;
+ }
+ 
+ .sup7
+ {
+    FONT-SIZE: 7pt;
+ }
+
+
+/* оформление рисунков */
+
+.pic
+ {
+    TEXT-ALIGN: center;
+    TEXT-INDENT: 0em;
+    margin-top: 10pt;
+    margin-bottom: 8pt;
+ }
+
+.runaround_left
+ {
+    float: left;
+    TEXT-INDENT: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+ }
+
+.runaround_right
+ {
+    float: right;
+    TEXT-INDENT: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+ }
+
+
+/* заголовок таблицы */
+
+.tablesign
+ {
+    TEXT-ALIGN: left;
+    TEXT-INDENT: 0em;   
+    margin-top: 10pt; 
+ }
+
+/* гостевая */
+
+.pcolor1{color: #005E2E; font-size: 16pt}
+.pcolor2{color: #002E00; font-size: 18px}	
+.em{ color: #A80303; font-style: normal}
+.help{color: #002E00; font-size: 80%; font-family: Arial, Helvetica, sans-serif; margin:0px; text-align: right}
+.ptext{color: #002E00; font-size: 90%; font-family: Arial, Helvetica, sans-serif; text-align: justify; text-indent: 20px; margin-left: 40px; margin-top: 0px}	
+.panswer{color: #4795F3; font-size: 90%; font-family: Arial, Helvetica, sans-serif; text-align: justify; margin-top: 10px}		
+.ptdg{font-size: 75%;color: black;	font-family: Arial, Helvetica, sans-serif;	margin: 0px; text-indent: 0px}
+
+/* врезка */
+
+.vrezka
+ {
+    BACKGROUND: #F3E7D0;
+    TEXT-ALIGN: justify;
+    TEXT-INDENT: 2em;
+    margin-top: 10pt;
+ }
+
+
+/* номер журнала */
+
+.source
+ { 
+    FONT-WEIGHT: bold;
+    FONT-STYLE: italic;
+    TEXT-INDENT: 0em;
+    TEXT-ALIGN: right;  
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+ }
+
+
+/* спуск */
+
+.spusk
+ { 
+    FONT-WEIGHT: bold;
+    TEXT-INDENT: 0em;
+    TEXT-ALIGN: justify; 
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    margin-left: 2em;
+    margin-right: 0em;
+ }
+
+
+/* координаты*/
+
+.mypage
+ { 
+    FONT-SIZE: 7pt;
+    TEXT-DECORATION: none;
+    TEXT-ALIGN: center;
+    TEXT-INDENT: 0em;
+    margin-top: 18pt;
+ }
+
+
+/* курсив */
+
+.anons
+ { 
+    FONT-SIZE: 9pt;
+    font-style: italic;
+    TEXT-ALIGN: left;
+    TEXT-INDENT: 0em;
+    margin-right: 2em;
+    margin-left: 2em; 
+ }
+
+
+/* источник */
+
+.magazin
+ {
+    margin-bottom: 8pt;
+    TEXT-ALIGN: right;
+    margin-right: 1em;
+    TEXT-DECORATION: none;
+ }
+
+
+/* Сервантес */
+
+.servantes
+ { 
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 11pt;
+    FONT-WEIGHT: bold;
+    COLOR: #0d3300;
+    FONT-STYLE: italic;
+    TEXT-INDENT: 0em;
+    TEXT-ALIGN: right;  
+    margin-top: 0pt;
+    margin-bottom: 4pt;
+ }
+ 
+*.right
+{
+	text-align: right;
+}
+
+*.center
+{
+	text-align: center;
+}
+
+*.white 
+{
+	color: #FFF;
+}
+
+*.norm 
+{
+	color: #000;
+}
+
+*.alert
+{
+	color: #F00;
+}
+
+*.alertY 
+{
+	color: #F00; text-align: left;
+}
+
+*.tablenonemargin
+{
+    margin-bottom: 0pt;
+	border-style: none;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+/* ============		Spoiler	 ============ */
+.spoiler-wrap {
+	width: 99%;
+	max-width: 99%;
+	margin: 6px auto;
+	clear: both;
+	background: #E9E9E9;
+	border: solid #C3C3C3;
+	border-width: 1px 1px 1px 2px;
+	font: 12px Verdana,Arial,sans-serif;
+}
+.spoiler-head {
+	font-size: 11px;
+	padding: 1px 14px 3px;
+	margin-left: 6px;
+	line-height: 15px;
+	font-weight: bold;
+}
+.spoiler-body {
+	padding: 1px 6px 2px;
+	display: none;
+	border-top: 1px solid #C3CBD1;
+	background: #F5F5F5;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.folded {
+	display: block;
+	background: transparent url(icon_plus.gif) no-repeat left center;
+	padding-left: 14px; 
+}
+
+.unfolded {
+	display: block;
+	background: transparent url(icon_minus.gif) no-repeat left center;
+	padding-left: 14px;
+}
+
+/* tooltip */
+ 
+.tooltip { position: relative; }
+.tooltip span {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  display: none;
+  min-width: 50px;
+  padding: 3px 8px;
+  white-space: nowrap;
+  font-size: 11px;
+  text-align: right;
+  background-color: rgba(33,33,33,.8);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  color: #fff;
+}
+.tooltip span small {
+  position: absolute;
+  right: 10px;
+  bottom: -6px;
+  border-top: 6px solid rgba(33,33,33,.8);
+  border-left: 6px solid transparent;
+}
+.tooltip:hover span { display: block; }
+
+/* для IE */
+ 
+.tooltip span { background-color: #333333; }
+.tooltip span small { border-top: 6px solid #333333; }
+ 
+/* фиксим проблему со стрелочкой в IE 6 */
+ 
+*html .tooltip span small {
+  border-left: 6px solid #333333; /* Соответствует цвету фона */
+}
+ 
+/* фиксим проблему в IE 8 */
+ 
+.tooltip span { background-color /*\**/: #000\9  }
+.tooltip span small { border-top /*\**/: 6px solid #333333; }
+
+/* Выравнивание объектов по ширине блока justify */
+.justify-box ul {		
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+	
+	ul {
+		font: 10pt;
+		text-align: justify;
+		TEXT-INDENT: 0em;
+		/* Обнуляем для родителя*/
+		line-height: 0;
+		font-size: 1px; /* 1px для Opera */
+		
+		/* Лекарство для IE6-7*/		
+		text-justify: newspaper;
+	}
+
+		ul li  {
+			display: inline-block;
+			text-align: left;
+			border: 0px;
+			
+			/* Востанавливаем у потомков, кроме последнего*/
+			line-height: normal;
+			font-size: 10pt;
+			
+			/* Без него в Opera будет отступ под элементами */
+			vertical-align: top; 
+			
+			/* эмуляция inline-block для IE6-7*/
+			//display : inline;
+			//zoom : 1;
+		}
+		ul li.helper { 
+			width: 100%; 
+			height: 0px;
+			visibility: hidden;
+			overflow: hidden;
+		}
+/* END Выравнивание объектов по ширине блока justify */
+
+/* Create */
+
+@media (color-gamut: p3) {
+A:link { color: #275E16; }
+A:visited { color: #275E16; }
+A:active { color: #398223; }
+A:hover { color: #398223; }
+.red {color: #CC2F20;}
+.novinka {color: #CC2F20;}
+.servantes { COLOR: #183208;}
+.cyan { color: #4BA6DD; }
+.magenta { color: #C23982; }
+.yellow { color: #CCBB3D; }
+.black { color: #222121; }
+.green { color: #3D8A41; }
+.blue { color: #29367F; }
+}
+
+@media (color-gamut: rec2020) {
+A:link { color: #21440B; }
+A:visited { color: #21440B; }
+A:active { color: #376613; }
+A:hover { color: #376613; }
+.red {color: #9B2B10;}
+.novinka {color: #9B2B10;}
+.servantes { COLOR: #0F1B03; }
+.cyan { color: #578AC3; }
+.magenta { color: #943268; }
+.yellow { color: #ABA12B; }
+.black { color: #121212; }
+.green { color: #3C6E2D; }
+.blue { color: #1E2165; }
+}
