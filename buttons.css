@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* buttons 2026*/
+input[type="button"], input[type="reset"], input[type="submit"]
+{
+	height:25px;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+	background: #F2F2F2;
+	border: 1px solid #8F8F8F;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover
+{
+background-image: -webkit-linear-gradient(top, rgba(87, 166, 240, 0.2), rgba(87, 166, 240, 0.9));
+background-image: -moz-linear-gradient(top, rgba(83, 144, 14, 0.2), rgba(83, 144, 14, 0.9));
+background-image: -o-linear-gradient(top, rgba(83, 144, 14, 0.2), rgba(83, 144, 14, 0.9))
+background-image: -ms-linear-gradient(top, rgba(83, 144, 14, 0.2), rgba(83, 144, 14, 0.9))
+background-image: linear-gradient(top, rgba(87, 166, 240, 0.2), rgba(87, 166, 240, 0.9))
+}
