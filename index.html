@@ -13,8 +13,8 @@
 <link rel="shortcut icon" href="favicon.png" type="image/gif">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/jpicker.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/jpicker.css"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/style.css"> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/buttons.css">
 <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/jpicker.js"></script>
@@ -23,80 +23,79 @@
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/spectral.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/assortment.js"></script>
 </head>
-<body>
+<body>	
 <div class="container">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td align="center" style="padding-top: 22px; padding-bottom: 42px;">
-<table width="708" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td valign="bottom" bgcolor="#eaeaea">
-<h4 class="main-title">
-<br>Підбір фарби <a href="https://48.22web.org/pantone/">PANTONE®</a><br>
-<font size="-1">
-Оберіть колір в палітрі і натисніть кнопку OK, щоб перейти до підбору
-</font>
-</h4>
-<table>
-<div id="Inline"></div>
-<table width="555" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
-<tr>
-<td>
-<div class="spoiler-body">
-<br>
-<form name="LabInput">
-<table width="100%" border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td>
-<select name="LabLChInput" onchange="Lab_input();">
-<option value="0" selected>CIE Lab</option>
-<option value="1">CIE LCh</option>
-</select>
-</td>
-<td>L = <input type="text" name="Lab_LL" value="50" onchange="Lab_change();"></td>
-<td>a(C) = <input type="text" name="Lab_aC" value="0" onchange="Lab_change();"></td>
-<td>b(h) = <input type="text" name="Lab_bh" value="0" onchange="Lab_change();"></td>
-<td>
-<select name="illuminants_2" onchange="Lab_change();">
-<option value="0">A</option>
-<option value="1">B</option>
-<option value="2">C</option>
-<option value="3">D50</option>
-<option value="4" selected>D65</option>
-<option value="5">E</option>
-<option value="6">F2</option>
-<option value="7">F7</option>
-<option value="8">F11</option>
-</select>
-</td>
-</tr>
-</table>
-</form>
-</div>
-</div>
-<div id="Selector"></div>
-<div id="Report"></div>
-<div id="Hyper"></div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<script type="text/javascript">
-get_data();
-</script>
-</table>
-</div>
-
+    <div class="scale-wrapper">
+        <table width="708" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="center" style="padding-top: 22px; padding-bottom: 20px;">                  
+                    <table class="inner-table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td valign="bottom" bgcolor="#eaeaea" style="padding: 15px;">
+                                <h4 class="main-title">
+                                 Підбір фарби <a href="https://48.22web.org/pantone/">PANTONE®</a><br>         
+                                <font size="-1">
+                                 Оберіть колір в палітрі і натисніть кнопку OK, щоб перейти до підбору
+                                </font>
+                                </h4>
+								              <center> 
+                                <div id="Inline"></div>								
+                                <table width="555" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+                                    <tr>
+                                        <td>
+                                            <div class="spoiler-body">
+                                                <br>
+                                                <form name="LabInput">
+                                                    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                                                        <tr>
+                                                            <td>
+                                                                <select name="LabLChInput" onchange="Lab_input();">
+                                                                   <option value="0" selected>CIE Lab</option>
+                                                                   <option value="1">CIE LCh</option>
+                                                                </select>
+                                                            </td>
+                                                            <td>L = <input type="text" name="Lab_LL" size="3" value="50" onchange="Lab_change();"></td>
+                                                            <td>a(C) = <input type="text" name="Lab_aC" size="3" value="0" onchange="Lab_change();"></td>
+                                                            <td>b(h) = <input type="text" name="Lab_bh" size="3" value="0" onchange="Lab_change();"></td>
+                                                            <td>
+                                                                <select name="illuminants_2" onchange="Lab_change();">
+                                                                    <option value="0">A</option>
+                                                                    <option value="1">B</option>
+                                                                    <option value="2">C</option>
+                                                                    <option value="3">D50</option>
+                                                                    <option value="4" selected>D65</option>
+                                                                    <option value="5">E</option>
+                                                                    <option value="6">F2</option>
+                                                                    <option value="7">F7</option>
+                                                                    <option value="8">F11</option>
+                                                                </select>
+                                                             </td>
+                                                             </tr>
+                                                             </table>
+                                                             </form>
+                                                             </div> 
+											                                         <div id="Selector"></div>
+                                                               <div id="Report"></div>
+                                                               <div id="Hyper"></div>
+                                                             </td>
+                                                             </tr>
+                                                             </table>
+                                                            </center>
+															                               </td>
+                                                             </tr>
+                                                             </table>
+                                                             </td>
+                                                             </tr>
+		                                                 	      <script type="text/javascript">get_data();</script>
+                                                           </table>
+                                                         </div>
+                                                       </div>
 <center class="main-footer">
 <p>Зручний генератор штрих-кодів <a href="#">Barcode Generator</a> та <a href="#">QR-code</a></p>
 <p>Як правильно налаштувати відображення кольору в браузері <a href="https://help.kepion.com/hc/en-us/articles/360033831631-Faded-Color-Profile-in-Google-Chrome" rel="nofollow" target="_blank">Google Chrome</a> або в <a href="https://hende.kiev.ua/firefox.html" rel="nofollow" target="_blank">Mozilla Firefox</a></p>
 <br />
-<p>Відповіді на питання:</p>
+<p>Відповіді на питання: <a href="#">mykola.rudenko@fozzy.ua</a></p>
 <br /><br />
-</center>
+</center> 
 </body>
 </html>
