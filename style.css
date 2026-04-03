@@ -47,16 +47,19 @@ body {
 /* Резиновый контейнер по центру */
 .container {
     max-width: 726px;
-    width: 100%;
+    width: 708px;
     margin: 140px auto 30px auto;
     background: #EAEAEA;
-	
-	/* Добавляем скругление */
+	transform-origin: top left;	
     border-radius: 10px;	
-
-    /* Убираем внутренний скролл */
-    overflow: visible;
 }
+
+/* Центрирование  контейнера*/
+.scale-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
 
 /* Центрирование таблицы */
 .container table {
@@ -69,10 +72,20 @@ body {
     font-size: 11pt;
     TEXT-ALIGN: left;
     margin-bottom: 15pt;
-	margin-left: 58pt;
+	margin-left: 52pt;
 }
+
 .main-footer {
-	margin-right: 22pt;
+    margin-right: 22pt; 
+}
+
+@media (max-width: 708px) {
+    .container {
+        border-radius: 10px;
+    }
+	.main-title {
+			text-align: center;
+    }
 }
 
 /* End container  */
@@ -86,7 +99,6 @@ font-weight: bold;
 color: #36007e;
 resize: both;
 }
-
 
 .clients {margin-top:10px; margin-bottom:0px;}
 .clientsp {TEXT-INDENT: 0em;}
