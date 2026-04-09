@@ -5,16 +5,14 @@
 <title>RGB - PANTONE</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="description" content="Підбір фарби PANTONE®">
-<meta name="keywords" content="PANTONE, PANTONE®">
+<meta name="keywords" content="PANTONE, RGB, PANTONE®">
 <meta name="googlebot" content="noindex, nofollow">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="icon" href="favicon.png" type="image/gif">
-<link rel="shortcut icon" href="favicon.png" type="image/gif">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" href="favicon.svg" />
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/jpicker.css"> 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/style.css"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/buttons.css">
 <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/jpicker.js"></script>
@@ -22,79 +20,111 @@
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/Pantone_v4.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/spectral.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/assortment.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/camtasiabox/pantone@main/colormanager.js"></script>
 </head>
+<style>
+/* New container  */
+html, body {
+	background: #CCCCCC;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center container*/
+.container {
+    max-width: 726px;
+    width: 708px;
+    margin: 140px auto 30px auto;
+    background: #EAEAEA;
+	transform-origin: top left;	
+    border-radius: 10px;	
+}
+
+/* Scale container*/
+.scale-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Center table */
+.container table {
+    margin: 0 auto;
+}
+</style>
 <body>	
 <div class="container">
     <div class="scale-wrapper">
         <table width="708" border="0" cellspacing="0" cellpadding="0">
             <tr>
-                <td align="center" style="padding-top: 22px; padding-bottom: 20px;">                  
+                <td align="center" style="padding-top: 22px; padding-bottom: 20px;">
                     <table class="inner-table" width="100%" border="0" cellspacing="0" cellpadding="0">
                         <tr>
                             <td valign="bottom" bgcolor="#eaeaea" style="padding: 15px;">
                                 <h4 class="main-title">
-                                 Підбір фарби <a href="https://48.22web.org/pantone/">PANTONE®</a><br>         
-                                <font size="-1">
-                                 Оберіть колір в палітрі і натисніть кнопку OK, щоб перейти до підбору
-                                </font>
+                                    Підбір фарби <a href="https://48.22web.org/pantone/">PANTONE®</a><br>
+                                    <font size="-1">
+                                        Оберіть колір в палітрі і натисніть кнопку OK, щоб перейти до підбору
+                                    </font>
                                 </h4>
-								              <center> 
-                                <div id="Inline"></div>								
-                                <table width="555" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
-                                    <tr>
-                                        <td>
-                                            <div class="spoiler-body">
-                                                <br>
-                                                <form name="LabInput">
-                                                    <table width="100%" border="0" cellpadding="5" cellspacing="0">
-                                                        <tr>
-                                                            <td>
-                                                                <select name="LabLChInput" onchange="Lab_input();">
-                                                                   <option value="0" selected>CIE Lab</option>
-                                                                   <option value="1">CIE LCh</option>
-                                                                </select>
-                                                            </td>
-                                                            <td>L = <input type="text" name="Lab_LL" size="3" value="50" onchange="Lab_change();"></td>
-                                                            <td>a(C) = <input type="text" name="Lab_aC" size="3" value="0" onchange="Lab_change();"></td>
-                                                            <td>b(h) = <input type="text" name="Lab_bh" size="3" value="0" onchange="Lab_change();"></td>
-                                                            <td>
-                                                                <select name="illuminants_2" onchange="Lab_change();">
-                                                                    <option value="0">A</option>
-                                                                    <option value="1">B</option>
-                                                                    <option value="2">C</option>
-                                                                    <option value="3">D50</option>
-                                                                    <option value="4" selected>D65</option>
-                                                                    <option value="5">E</option>
-                                                                    <option value="6">F2</option>
-                                                                    <option value="7">F7</option>
-                                                                    <option value="8">F11</option>
-                                                                </select>
-                                                             </td>
-                                                             </tr>
-                                                             </table>
-                                                             </form>
-                                                             </div> 
-											                                         <div id="Selector"></div>
-                                                               <div id="Report"></div>
-                                                               <div id="Hyper"></div>
-                                                             </td>
-                                                             </tr>
-                                                             </table>
-                                                            </center>
-															                               </td>
-                                                             </tr>
-                                                             </table>
-                                                             </td>
-                                                             </tr>
-		                                                 	      <script type="text/javascript">get_data();</script>
-                                                           </table>
-                                                         </div>
-                                                       </div>
-<center class="main-footer">
-<p>Зручний генератор штрих-кодів <a href="#">Barcode Generator</a> та <a href="#">QR-code</a></p>
+                                <center>
+                                    <div id="Inline"></div>
+                                    <table width="555" border="0" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+                                        <tr>
+                                            <td>
+                                                <div class="spoiler-body">
+                                                    <br>
+                                                    <form name="LabInput">
+                                                        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                                                            <tr>
+                                                                <td>
+                                                                    <select name="LabLChInput" onchange="Lab_input();">
+                                                                        <option value="0" selected>CIE Lab</option>
+                                                                        <option value="1">CIE LCh</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td>L = <input type="text" name="Lab_LL" size="3" value="50" onchange="Lab_change();"></td>
+                                                                <td>a(C) = <input type="text" name="Lab_aC" size="3" value="0" onchange="Lab_change();"></td>
+                                                                <td>b(h) = <input type="text" name="Lab_bh" size="3" value="0" onchange="Lab_change();"></td>
+                                                                <td>
+                                                                    <select name="illuminants_2" onchange="Lab_change();">
+                                                                        <option value="0">A</option>
+                                                                        <option value="1">B</option>
+                                                                        <option value="2">C</option>
+                                                                        <option value="3">D50</option>
+                                                                        <option value="4" selected>D65</option>
+                                                                        <option value="5">E</option>
+                                                                        <option value="6">F2</option>
+                                                                        <option value="7">F7</option>
+                                                                        <option value="8">F11</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </form>
+                                                </div>
+                                                <div id="Selector"></div>
+                                                <div id="Report"></div>
+                                                <div id="Hyper"></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </center>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <script type="text/javascript">
+                get_data();
+            </script>
+        </table>
+    </div>
+</div>
+ <center class="main-footer">
+<p>Зручний генератор штрих-кодів <a href="https://48.22web.org/">Barcode Generator</a> та <a href="https://48.22web.org/qr_code/">QR-code</a></p>
 <p>Як правильно налаштувати відображення кольору в браузері <a href="https://help.kepion.com/hc/en-us/articles/360033831631-Faded-Color-Profile-in-Google-Chrome" rel="nofollow" target="_blank">Google Chrome</a> або в <a href="https://hende.kiev.ua/firefox.html" rel="nofollow" target="_blank">Mozilla Firefox</a></p>
 <br />
-<p>Відповіді на питання: <a href="#">mykola.rudenko@fozzy.ua</a></p>
+<p>Відповіді на питання: <a href="mailto:@fozzy.ua">@fozzy.ua</a></p>
 <br /><br />
 </center> 
 </body>
